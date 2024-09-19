@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Showcase</title>
+</head>
+<body>
+    <h1>Monster Showcase</h1>
+    <h2>The <%= monster.name%></h2>
+
+    <p>
+        The Appearance: <%= monster.Appearance %>
+    </p>
+
+    <p>
+        The Culture and Nationalities: <%= monster.Culture%>
+    </p>
+
+    <p>
+        The symbolics: <%= monster.Symbolism%>
+    </p>
+
+    <p>
+        The Powers and Abilities: <%= monster.Abilities%>
+    </p>
+
+    <p>
+        The Real-life inspiration: <%= monster.Origin%>
+    </p>
+
+    <form method="POST" action="/monsters/<%=monster.id%>?_method=DELETE"> <button type="submit">Delete This Monster</button></form>
+
+</body>
+</html>

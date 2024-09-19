@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Monsters Catalog</h1>
+    <ul>
+        <% monsters.forEach(monster => {%> 
+            <li><a href="/monsters/<%= monster.id %>"><%= monster.name %></a></li>
+        <%})%>
+    </ul>
+
+    <a href="/"> Back to Homepage</a> | <a href="/monsters/new">Add a new Monster Here!</a>
+    
+</body>
+</html>
